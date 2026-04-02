@@ -36,7 +36,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:#000}
 <div id="start">
 <h1>DEADZONE</h1>
 <p>TAP TO SURVIVE</p>
-<button onclick="startGame()">PLAY</button>
+<button id="playBtn" onclick="startGame()">PLAY</button>
 </div>
 <div id="hud"><div class="health"><div class="health-fill" id="hp-fill"></div></div></div>
 <div class="weapon" id="weapon">PISTOL</div>
@@ -382,6 +382,7 @@ function startGame(){
 }
 
 loop();
+document.getElementById('playBtn').onclick=startGame;
 </script>
 </body>
 </html>
